@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 310px;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.card {
+    font-size: 15px;
+    padding: 30px;
+}
+
+img {
+    width: 30%;
+}
+
+.card p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.card h1 {
+    color: hsl(0, 0%, 95%);
+    margin-top: 20px;
+}
+
+button{
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    margin-top: 50px;
+}
+
+.btn1{
+    color: hsl(31, 77%, 52%);
+}
+
+.btn2{
+    color: hsl(184, 100%, 22%);
+}
+
+.btn3{
+    color: hsl(179, 100%, 13%);
+}
+
+.card:nth-of-type(1) {
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.card:nth-of-type(2) {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card:nth-of-type(3) {
+    background-color: hsl(179, 100%, 13%);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+@media only screen and (max-width: 600px){
+    
+    main {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 20px;
+    }  
+
+    .card {
+        width: 180px;
+    } 
+
+    .card:nth-of-type(1) {
+        border-top-right-radius: 8px;
+    }
+
+    .card:nth-of-type(3) {
+        border-bottom-left-radius: 8px;
+    }
+
+    .card p {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-weight: 400;
+        font-size: 13px;
+        margin-top: 20px;
+        line-height: 20px;
+    }
+    
+    button{
+        padding: 10px 12px;
+    }
+}
